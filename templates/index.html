@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume Analyzer</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark text-white">
+
+<div class="container text-center mt-5">
+    <h1>🚀 AI Resume Analyzer</h1>
+    <p>Analyze and improve your resume</p>
+
+    <form action="/analyze" method="post" enctype="multipart/form-data">
+        <input type="file" name="resume" class="form-control w-50 mx-auto my-3" required>
+        <button class="btn btn-primary">Analyze Resume</button>
+    </form>
+
+    <br>
+    <a href="/builder" class="btn btn-success">Create Resume</a>
+</div>
+
+</body>
+</html>
