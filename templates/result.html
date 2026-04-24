@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Result</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
+<body>
 
-<body class="bg-light">
-
-<div class="container mt-5">
+<div class="container">
     <h2>ATS Score: {{score}}%</h2>
 
-    <h4>Skills Found</h4>
+    <h3>Skills Found:</h3>
     <ul>
-        {% for s in skills %}
-        <li>{{s}}</li>
+        {% for skill in skills %}
+        <li>{{skill}}</li>
         {% endfor %}
     </ul>
 
-    <h4>Missing Skills</h4>
-    <ul>
-        {% for m in missing %}
-        <li>{{m}}</li>
-        {% endfor %}
-    </ul>
-
-    <a href="/improve" class="btn btn-warning">Improve Resume</a>
+    <a href="/">Go Back</a>
 </div>
 
 </body>
